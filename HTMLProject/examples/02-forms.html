@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms & Input</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Forms & Input</h1>
+        <nav><a href="../index.html">← Back to Home</a></nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Simple Contact Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+                <button type="submit">Send Message</button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Input Types</h2>
+            <form>
+                <label for="text-input">Text:</label>
+                <input type="text" id="text-input" placeholder="Type something...">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter password">
+
+                <label for="number">Number:</label>
+                <input type="number" id="number" min="0" max="100">
+
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+
+                <label for="color">Color Picker:</label>
+                <input type="color" id="color">
+
+                <label for="file">File Upload:</label>
+                <input type="file" id="file">
+            </form>
+        </section>
+
+        <section>
+            <h2>Radio Buttons and Checkboxes</h2>
+            <form>
+                <h3>Select One (Radio):</h3>
+                <label>
+                    <input type="radio" name="option" value="yes"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="option" value="no"> No
+                </label>
+
+                <h3>Select Multiple (Checkboxes):</h3>
+                <label>
+                    <input type="checkbox" name="interests" value="html"> HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="css"> CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="javascript"> JavaScript
+                </label>
+            </form>
+        </section>
+
+        <footer class="page-footer">
+            <p><a href="../index.html">← Back to Home</a></p>
+        </footer>
+    </main>
+</body>
+</html>

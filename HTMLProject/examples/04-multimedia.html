@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia in HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Multimedia in HTML</h1>
+        <nav><a href="../index.html">← Back to Home</a></nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Images</h2>
+            <p>The &lt;img&gt; tag embeds images in web pages. Always include:</p>
+            <ul>
+                <li><strong>src</strong> - Path to the image file</li>
+                <li><strong>alt</strong> - Alternative text for accessibility</li>
+            </ul>
+            <p>Example:</p>
+            <code>&lt;img src="champlifelogo.png" alt="A beautiful landscape"&gt;</code>
+            
+            <p>Image Display:</p>
+            <img src="champlifelogo.png" alt="Champlife Logo" style="max-width: 100%; height: auto; margin-top: 1rem;">
+        </section>
+
+        <section>
+            <h2>Audio</h2>
+            <p>Embed audio with the &lt;audio&gt; tag:</p>
+            <code>&lt;audio controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="audio.mp3" type="audio/mpeg"&gt;<br>
+                Your browser doesn't support HTML5 audio.<br>
+                &lt;/audio&gt;</code>
+            
+            <p>Example audio player:</p>
+            <audio controls>
+                <source src="data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAAB9AAACABAAZGF0YQIAAAAAAA==" type="audio/wav">
+                Your browser doesn't support HTML5 audio.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Video</h2>
+            <p>Embed video with the &lt;video&gt; tag:</p>
+            <code>&lt;video width="320" height="240" controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+                Your browser doesn't support HTML5 video.<br>
+                &lt;/video&gt;</code>
+        </section>
+
+        <section>
+            <h2>Responsive Media</h2>
+            <p>Use the &lt;picture&gt; element for responsive images:</p>
+            <code>&lt;picture&gt;<br>
+                &nbsp;&nbsp;&lt;source media="(min-width: 800px)" srcset="large.jpg"&gt;<br>
+                &nbsp;&nbsp;&lt;img src="small.jpg" alt="Responsive image"&gt;<br>
+                &lt;/picture&gt;</code>
+        </section>
+
+        <footer class="page-footer">
+            <p><a href="../index.html">← Back to Home</a></p>
+        </footer>
+    </main>
+</body>
+</html>
